@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="containers">
+            <header>
+                <h1>Invoice creator</h1>
+                <h3>Thanks for choosing HuiCORP, LLC!</h3>
+            </header>
+            <main>
+                <div class="buttons">
+                        <button id="wash-car-btn">Wash Car: 10$</button>
+                        <button id="mow-lawn-btn">Mow Lawn: 20$</button>
+                        <button id="pull-weeds-btn">Pull Weeds: 30$</button>
+                </div>
+                <div class="services">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>TASK</th>
+                                <th>TOTAL</th>
+                            </tr>
+                        </thead>
+                        <tbody id="services-activated">
+                            <tr><td><em></em></td></tr>
+                        </tbody>
+                    </table>
+
+                    <hr />
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NOTES</th>
+                                <th>TOTAL SUM</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr id="total-sum-el">
+                                <td class="note"></td>
+                                <td class="total-sum"><span id="total-sum">$0</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <button id="invoice-btn">✉ Send invoice</button>
+                </div>
+            </main>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
